@@ -17,6 +17,7 @@ Built with **Claude Code** (Claude Opus 5.5). The rule: **AI writes, tests decid
 - **Unrecognised timeout wording:** "cannot complete the operation within the time specified" was classified as `Error`. Fixed, with a test.
 - **Variable shadowing:** in the remoting start-failure handler, `$_` inside `ForEach-Object` referred to the computer name, not the error. Fixed before first run.
 - **PS 7 compatibility:** reading `Retry-After` differs between `WebHeaderCollection` (5.1) and `HttpResponseHeaders` (7); both are handled. `-UseBasicParsing` is passed only on 5.1.
+- **Edition difference in the read-only scan:** CI showed 131 tests on PS 5.1 but 129 on PS 7. `Get-ChildItem -Include` matched the `.psd1` manifest on 5.1 only (no code file was missed on either). The scan now filters by explicit extensions, so both editions scan the same 12 files.
 - **Test bugs (not product bugs):** a scriptblock bound to the wrong positional parameter in a test helper (every "changed" fixture looked healthy, so 26 tests failed until it was found), a one-line log read as a string, and directories picked up by `-Include`.
 - **A Python escape slip while editing** turned `\f` in a path into a form-feed character. A control-character scan of the repo found it, and it was fixed.
 

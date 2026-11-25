@@ -2,8 +2,9 @@
 # machines it checks. Parses every source file with the PowerShell AST.
 
 BeforeDiscovery {
+    # Explicit extension filter: -Include matched the .psd1 manifest on PS 5.1 but not on PS 7; now identical on both.
     $src = Join-Path $PSScriptRoot '..\src'
-    $script:sourceFiles = @(Get-ChildItem -LiteralPath $src -Recurse -File -Include '*.ps1', '*.psm1' | ForEach-Object { @{ Name = $_.Name; Path = $_.FullName } })
+    $script:sourceFiles = @(Get-ChildItem -LiteralPath $src -Recurse -File | Where-Object { $_.Extension -in '.ps1', '.psm1', '.psd1' } | ForEach-Object { @{ Name = $_.Name; Path = $_.FullName } })
 }
 
 BeforeAll {
@@ -64,7 +65,7 @@ Describe 'Read-only by design' {
     }
 
     It 'registry paths appear only in the probe, and only for reading' {
-        $files = Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot '..\src') -Recurse -File -Include '*.ps1', '*.psm1' | Where-Object Name -NE 'Probe.ps1'
+        $files = Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot '..\src') -Recurse -File | Where-Object { $_.Extension -in '.ps1', '.psm1', '.psd1' -and $_.Name -ne 'Probe.ps1' }
         foreach ($f in $files) { (Get-Content -LiteralPath $f.FullName -Raw) | Should -Not -Match 'HKLM:|HKEY_LOCAL_MACHINE|Registry::' -Because $f.Name }
     }
 

@@ -12,7 +12,7 @@ CI: GitHub Actions `windows-latest`, Windows PowerShell 5.1 **and** PowerShell 7
 | Webhook.Tests.ps1 | 11 | Teams/Slack/generic payloads valid and listing only problem machines; Adaptive Card; generic findings; cap and "N more"; quiet mode; delivery success, 5xx + network retry delays, Retry-After, 4xx no retry, give up after retries |
 | EndToEnd.Tests.ps1 | 12 | Two runs with trend and webhook; quiet mode; missing URL; failed webhook doesn't fail the run; empty selection; **real run on this machine**; exit codes 0/1/2 and 3 in a child process; default output folder under `powershell -File`; Register `-WhatIf` pre-flight; bad inventory refused; Unregister no-op |
 | ReadOnly.Tests.ps1 | 28 | Per source file: no state-changing command, no registry-write or install method; probe allow-list; history query only; registry paths only in the probe; deletes only in the history folder |
-| **Total** | **131** | Latest local run: Windows PowerShell 5.1, Pester 6.2.0: 131 passed, 0 failed; PSScriptAnalyzer: 0 findings |
+| **Total** | **131** | Local: Windows PowerShell 5.1 + Pester 6.2.0, 131 passed. CI: 5.1 and PowerShell 7, the same 131 on both. PSScriptAnalyzer: 0 findings |
 
 ## Manual (before go-live, with screenshots)
 
