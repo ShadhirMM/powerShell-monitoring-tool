@@ -1,0 +1,12 @@
+FleetWU run 20261125T060000Z: ALERT  (5 machines: 3 ALERT, 1 WARNING, 1 OK, 1 unreachable)
+  ALERT   OFFICE-PC-01       Microsoft Windows 11 Pro 25H2 (build 26200.7171)
+           [ALERT  ] AutomaticUpdates  Policy NoAutoUpdate=1: automatic updates are turned off
+  ALERT   OFFICE-PC-02       Microsoft Windows 11 Pro 25H2 (build 26200.7171)
+           [ALERT  ] UpdatePause       Updates paused until 2026-12-09 (14 days remaining)
+           [WARNING] LastQualityUpdate 47 days ago on 2026-10-09: 2026-10 Cumulative Update for Windows 11 (KB5098001)
+  ALERT   RES-MEDIA-01       Microsoft Windows 11 Pro 25H2 (build 26200.7171)
+           [ALERT  ] PendingReboot     Reboot pending; last boot 9 days ago
+  WARNING OFFICE-LT-03       
+           [WARNING] Connectivity      Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)
+  OK      RES-KIOSK-04       Microsoft Windows 11 Pro 25H2 (build 26200.7171)
+  Since 20261118T060000Z: 2 new, 1 worse, 1 resolved, 2 still failing

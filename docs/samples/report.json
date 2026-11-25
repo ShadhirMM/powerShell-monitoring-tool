@@ -1,0 +1,336 @@
+{
+    "RunId":  "20261125T060000Z",
+    "StartedAt":  "2026-11-25T06:00:00.0000000Z",
+    "FinishedAt":  "2026-11-25T06:00:19.0000000Z",
+    "ToolVersion":  "1.0.0",
+    "Status":  "ALERT",
+    "Counts":  {
+                   "Total":  5,
+                   "OK":  1,
+                   "WARNING":  1,
+                   "ALERT":  3,
+                   "Unreachable":  1
+               },
+    "Machines":  [
+                     {
+                         "ComputerName":  "OFFICE-PC-01",
+                         "Group":  "Office",
+                         "Tags":  [
+
+                                  ],
+                         "Transport":  "Remote",
+                         "Reachability":  "Online",
+                         "UnreachableRuns":  0,
+                         "Status":  "ALERT",
+                         "Os":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171)",
+                         "CollectedAt":  "2026-11-25T06:00:00.0000000Z",
+                         "Checks":  [
+                                        {
+                                            "Check":  "Connectivity",
+                                            "Status":  "OK",
+                                            "Detail":  "Online (2.2s)"
+                                        },
+                                        {
+                                            "Check":  "UpdateServices",
+                                            "Status":  "OK",
+                                            "Detail":  "Update services enabled (wuauserv: Manual, UsoSvc: Auto, WaaSMedicSvc: Manual)"
+                                        },
+                                        {
+                                            "Check":  "AutomaticUpdates",
+                                            "Status":  "ALERT",
+                                            "Detail":  "Policy NoAutoUpdate=1: automatic updates are turned off"
+                                        },
+                                        {
+                                            "Check":  "UpdatePause",
+                                            "Status":  "OK",
+                                            "Detail":  "Updates are not paused"
+                                        },
+                                        {
+                                            "Check":  "Deferral",
+                                            "Status":  "OK",
+                                            "Detail":  "Quality deferral 0 days, feature deferral 0 days"
+                                        },
+                                        {
+                                            "Check":  "UpdateSource",
+                                            "Status":  "OK",
+                                            "Detail":  "Microsoft Windows Update (online)"
+                                        },
+                                        {
+                                            "Check":  "LastQualityUpdate",
+                                            "Status":  "OK",
+                                            "Detail":  "10 days ago on 2026-11-15: 2026-11 Cumulative Update for Windows 11 (KB5099001)"
+                                        },
+                                        {
+                                            "Check":  "RecentFailures",
+                                            "Status":  "OK",
+                                            "Detail":  "No unresolved failures in 30 days"
+                                        },
+                                        {
+                                            "Check":  "PendingReboot",
+                                            "Status":  "OK",
+                                            "Detail":  "No reboot pending; last boot 2 days ago"
+                                        }
+                                    ]
+                     },
+                     {
+                         "ComputerName":  "OFFICE-PC-02",
+                         "Group":  "Office",
+                         "Tags":  [
+
+                                  ],
+                         "Transport":  "Remote",
+                         "Reachability":  "Online",
+                         "UnreachableRuns":  0,
+                         "Status":  "ALERT",
+                         "Os":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171)",
+                         "CollectedAt":  "2026-11-25T06:00:00.0000000Z",
+                         "Checks":  [
+                                        {
+                                            "Check":  "Connectivity",
+                                            "Status":  "OK",
+                                            "Detail":  "Online (2.6s)"
+                                        },
+                                        {
+                                            "Check":  "UpdateServices",
+                                            "Status":  "OK",
+                                            "Detail":  "Update services enabled (wuauserv: Manual, UsoSvc: Auto, WaaSMedicSvc: Manual)"
+                                        },
+                                        {
+                                            "Check":  "AutomaticUpdates",
+                                            "Status":  "OK",
+                                            "Detail":  "No policy: Windows default (download and install automatically)"
+                                        },
+                                        {
+                                            "Check":  "UpdatePause",
+                                            "Status":  "ALERT",
+                                            "Detail":  "Updates paused until 2026-12-09 (14 days remaining)"
+                                        },
+                                        {
+                                            "Check":  "Deferral",
+                                            "Status":  "OK",
+                                            "Detail":  "Quality deferral 0 days, feature deferral 0 days"
+                                        },
+                                        {
+                                            "Check":  "UpdateSource",
+                                            "Status":  "OK",
+                                            "Detail":  "Microsoft Windows Update (online)"
+                                        },
+                                        {
+                                            "Check":  "LastQualityUpdate",
+                                            "Status":  "WARNING",
+                                            "Detail":  "47 days ago on 2026-10-09: 2026-10 Cumulative Update for Windows 11 (KB5098001)"
+                                        },
+                                        {
+                                            "Check":  "RecentFailures",
+                                            "Status":  "OK",
+                                            "Detail":  "No unresolved failures in 30 days"
+                                        },
+                                        {
+                                            "Check":  "PendingReboot",
+                                            "Status":  "OK",
+                                            "Detail":  "No reboot pending; last boot 2 days ago"
+                                        }
+                                    ]
+                     },
+                     {
+                         "ComputerName":  "RES-MEDIA-01",
+                         "Group":  "Residence",
+                         "Tags":  [
+
+                                  ],
+                         "Transport":  "Remote",
+                         "Reachability":  "Online",
+                         "UnreachableRuns":  0,
+                         "Status":  "ALERT",
+                         "Os":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171)",
+                         "CollectedAt":  "2026-11-25T06:00:00.0000000Z",
+                         "Checks":  [
+                                        {
+                                            "Check":  "Connectivity",
+                                            "Status":  "OK",
+                                            "Detail":  "Online (3.1s)"
+                                        },
+                                        {
+                                            "Check":  "UpdateServices",
+                                            "Status":  "OK",
+                                            "Detail":  "Update services enabled (wuauserv: Manual, UsoSvc: Auto, WaaSMedicSvc: Manual)"
+                                        },
+                                        {
+                                            "Check":  "AutomaticUpdates",
+                                            "Status":  "OK",
+                                            "Detail":  "No policy: Windows default (download and install automatically)"
+                                        },
+                                        {
+                                            "Check":  "UpdatePause",
+                                            "Status":  "OK",
+                                            "Detail":  "Updates are not paused"
+                                        },
+                                        {
+                                            "Check":  "Deferral",
+                                            "Status":  "OK",
+                                            "Detail":  "Quality deferral 0 days, feature deferral 0 days"
+                                        },
+                                        {
+                                            "Check":  "UpdateSource",
+                                            "Status":  "OK",
+                                            "Detail":  "Microsoft Windows Update (online)"
+                                        },
+                                        {
+                                            "Check":  "LastQualityUpdate",
+                                            "Status":  "OK",
+                                            "Detail":  "10 days ago on 2026-11-15: 2026-11 Cumulative Update for Windows 11 (KB5099001)"
+                                        },
+                                        {
+                                            "Check":  "RecentFailures",
+                                            "Status":  "OK",
+                                            "Detail":  "No unresolved failures in 30 days"
+                                        },
+                                        {
+                                            "Check":  "PendingReboot",
+                                            "Status":  "ALERT",
+                                            "Detail":  "Reboot pending; last boot 9 days ago"
+                                        }
+                                    ]
+                     },
+                     {
+                         "ComputerName":  "OFFICE-LT-03",
+                         "Group":  "Office",
+                         "Tags":  [
+
+                                  ],
+                         "Transport":  "Remote",
+                         "Reachability":  "Unreachable",
+                         "UnreachableRuns":  2,
+                         "Status":  "WARNING",
+                         "Os":  null,
+                         "CollectedAt":  null,
+                         "Checks":  [
+                                        {
+                                            "Check":  "Connectivity",
+                                            "Status":  "WARNING",
+                                            "Detail":  "Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)"
+                                        }
+                                    ]
+                     },
+                     {
+                         "ComputerName":  "RES-KIOSK-04",
+                         "Group":  "Residence",
+                         "Tags":  [
+
+                                  ],
+                         "Transport":  "Remote",
+                         "Reachability":  "Online",
+                         "UnreachableRuns":  0,
+                         "Status":  "OK",
+                         "Os":  "Microsoft Windows 11 Pro 25H2 (build 26200.7171)",
+                         "CollectedAt":  "2026-11-25T06:00:00.0000000Z",
+                         "Checks":  [
+                                        {
+                                            "Check":  "Connectivity",
+                                            "Status":  "OK",
+                                            "Detail":  "Online (1.7s)"
+                                        },
+                                        {
+                                            "Check":  "UpdateServices",
+                                            "Status":  "OK",
+                                            "Detail":  "Update services enabled (wuauserv: Manual, UsoSvc: Auto, WaaSMedicSvc: Manual)"
+                                        },
+                                        {
+                                            "Check":  "AutomaticUpdates",
+                                            "Status":  "OK",
+                                            "Detail":  "No policy: Windows default (download and install automatically)"
+                                        },
+                                        {
+                                            "Check":  "UpdatePause",
+                                            "Status":  "OK",
+                                            "Detail":  "Updates are not paused"
+                                        },
+                                        {
+                                            "Check":  "Deferral",
+                                            "Status":  "OK",
+                                            "Detail":  "Quality deferral 0 days, feature deferral 0 days"
+                                        },
+                                        {
+                                            "Check":  "UpdateSource",
+                                            "Status":  "OK",
+                                            "Detail":  "Microsoft Windows Update (online)"
+                                        },
+                                        {
+                                            "Check":  "LastQualityUpdate",
+                                            "Status":  "OK",
+                                            "Detail":  "10 days ago on 2026-11-15: 2026-11 Cumulative Update for Windows 11 (KB5099001)"
+                                        },
+                                        {
+                                            "Check":  "RecentFailures",
+                                            "Status":  "OK",
+                                            "Detail":  "No unresolved failures in 30 days"
+                                        },
+                                        {
+                                            "Check":  "PendingReboot",
+                                            "Status":  "OK",
+                                            "Detail":  "No reboot pending; last boot 2 days ago"
+                                        }
+                                    ]
+                     }
+                 ],
+    "Trend":  {
+                  "HasPrevious":  true,
+                  "PreviousRunId":  "20261118T060000Z",
+                  "New":  [
+                              {
+                                  "ComputerName":  "OFFICE-PC-01",
+                                  "Check":  "AutomaticUpdates",
+                                  "Previous":  "OK",
+                                  "Current":  "ALERT",
+                                  "Detail":  "Policy NoAutoUpdate=1: automatic updates are turned off"
+                              },
+                              {
+                                  "ComputerName":  "OFFICE-PC-02",
+                                  "Check":  "LastQualityUpdate",
+                                  "Previous":  "OK",
+                                  "Current":  "WARNING",
+                                  "Detail":  "47 days ago on 2026-10-09: 2026-10 Cumulative Update for Windows 11 (KB5098001)"
+                              }
+                          ],
+                  "Resolved":  [
+                                   {
+                                       "ComputerName":  "RES-KIOSK-04",
+                                       "Check":  "AutomaticUpdates",
+                                       "Previous":  "WARNING",
+                                       "Current":  "OK",
+                                       "Detail":  "No policy: Windows default (download and install automatically)"
+                                   }
+                               ],
+                  "Worsened":  [
+                                   {
+                                       "ComputerName":  "RES-MEDIA-01",
+                                       "Check":  "PendingReboot",
+                                       "Previous":  "WARNING",
+                                       "Current":  "ALERT",
+                                       "Detail":  "Reboot pending; last boot 9 days ago"
+                                   }
+                               ],
+                  "Persisting":  [
+                                     {
+                                         "ComputerName":  "OFFICE-PC-02",
+                                         "Check":  "UpdatePause",
+                                         "Previous":  "ALERT",
+                                         "Current":  "ALERT",
+                                         "Detail":  "Updates paused until 2026-12-09 (14 days remaining)"
+                                     },
+                                     {
+                                         "ComputerName":  "OFFICE-LT-03",
+                                         "Check":  "Connectivity",
+                                         "Previous":  "WARNING",
+                                         "Current":  "WARNING",
+                                         "Detail":  "Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)"
+                                     }
+                                 ],
+                  "AddedMachines":  [
+
+                                    ],
+                  "RemovedMachines":  [
+
+                                      ]
+              }
+}

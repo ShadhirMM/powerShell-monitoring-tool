@@ -1,0 +1,34 @@
+{
+  "thresholds": {
+    "qualityUpdateWarnDays": 35,
+    "qualityUpdateAlertDays": 60,
+    "pauseWarnDays": 7,
+    "qualityDeferralWarnDays": 8,
+    "qualityDeferralAlertDays": 15,
+    "featureDeferralWarnDays": 181,
+    "failureLookbackDays": 30,
+    "failureWarnCount": 1,
+    "failureAlertCount": 3,
+    "rebootAlertDays": 7,
+    "unreachableAlertRuns": 3
+  },
+  "approvedWsusServers": ["https://wsus.familyoffice-demo.example:8531"],
+  "remote": {
+    "throttleLimit": 16,
+    "openTimeoutSec": 15,
+    "operationTimeoutSec": 120,
+    "totalTimeoutSec": 600,
+    "credentialPath": "",
+    "useSsl": false
+  },
+  "report": { "keepRuns": 26 },
+  "webhook": {
+    "format": "teams",
+    "urlEnvVar": "FLEETWU_WEBHOOK_URL",
+    "sendWhenOk": false,
+    "maxMachines": 15,
+    "retries": 3,
+    "retryDelaySec": [5, 20, 60],
+    "timeoutSec": 30
+  }
+}

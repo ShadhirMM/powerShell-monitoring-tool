@@ -1,0 +1,69 @@
+{
+    "machines":  [
+                     {
+                         "group":  "Office",
+                         "computerName":  "OFFICE-PC-01",
+                         "status":  "ALERT",
+                         "findings":  [
+                                          {
+                                              "detail":  "Policy NoAutoUpdate=1: automatic updates are turned off",
+                                              "status":  "ALERT",
+                                              "check":  "AutomaticUpdates"
+                                          }
+                                      ]
+                     },
+                     {
+                         "group":  "Office",
+                         "computerName":  "OFFICE-PC-02",
+                         "status":  "ALERT",
+                         "findings":  [
+                                          {
+                                              "detail":  "Updates paused until 2026-12-09 (14 days remaining)",
+                                              "status":  "ALERT",
+                                              "check":  "UpdatePause"
+                                          },
+                                          {
+                                              "detail":  "47 days ago on 2026-10-09: 2026-10 Cumulative Update for Windows 11 (KB5098001)",
+                                              "status":  "WARNING",
+                                              "check":  "LastQualityUpdate"
+                                          }
+                                      ]
+                     },
+                     {
+                         "group":  "Residence",
+                         "computerName":  "RES-MEDIA-01",
+                         "status":  "ALERT",
+                         "findings":  [
+                                          {
+                                              "detail":  "Reboot pending; last boot 9 days ago",
+                                              "status":  "ALERT",
+                                              "check":  "PendingReboot"
+                                          }
+                                      ]
+                     },
+                     {
+                         "group":  "Office",
+                         "computerName":  "OFFICE-LT-03",
+                         "status":  "WARNING",
+                         "findings":  [
+                                          {
+                                              "detail":  "Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)",
+                                              "status":  "WARNING",
+                                              "check":  "Connectivity"
+                                          }
+                                      ]
+                     }
+                 ],
+    "source":  "FleetWU",
+    "runId":  "20261125T060000Z",
+    "trend":  "Since last run: 2 new, 1 worse, 1 resolved, 2 still failing",
+    "summary":  "[ALERT] Windows Update fleet check: 5 machine(s): 3 ALERT, 1 WARNING, 1 OK (1 unreachable)",
+    "status":  "ALERT",
+    "counts":  {
+                   "alert":  3,
+                   "ok":  1,
+                   "unreachable":  1,
+                   "warning":  1,
+                   "total":  5
+               }
+}

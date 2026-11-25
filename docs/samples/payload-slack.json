@@ -1,0 +1,19 @@
+{
+    "text":  "[ALERT] Windows Update fleet check: 5 machine(s): 3 ALERT, 1 WARNING, 1 OK (1 unreachable)\nSince last run: 2 new, 1 worse, 1 resolved, 2 still failing\n- ALERT OFFICE-PC-01 - AutomaticUpdates: Policy NoAutoUpdate=1: automatic updates are turned off\n- ALERT OFFICE-PC-02 - UpdatePause: Updates paused until 2026-12-09 (14 days remaining)\n- ALERT RES-MEDIA-01 - PendingReboot: Reboot pending; last boot 9 days ago\n- WARNING OFFICE-LT-03 - Connectivity: Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)",
+    "blocks":  [
+                   {
+                       "text":  {
+                                    "text":  "Windows Update fleet: ALERT",
+                                    "type":  "plain_text"
+                                },
+                       "type":  "header"
+                   },
+                   {
+                       "text":  {
+                                    "text":  "[ALERT] Windows Update fleet check: 5 machine(s): 3 ALERT, 1 WARNING, 1 OK (1 unreachable)\nSince last run: 2 new, 1 worse, 1 resolved, 2 still failing\n- ALERT OFFICE-PC-01 - AutomaticUpdates: Policy NoAutoUpdate=1: automatic updates are turned off\n- ALERT OFFICE-PC-02 - UpdatePause: Updates paused until 2026-12-09 (14 days remaining)\n- ALERT RES-MEDIA-01 - PendingReboot: Reboot pending; last boot 9 days ago\n- WARNING OFFICE-LT-03 - Connectivity: Unreachable: WinRM cannot complete the operation. (2 run(s) in a row)",
+                                    "type":  "mrkdwn"
+                                },
+                       "type":  "section"
+                   }
+               ]
+}

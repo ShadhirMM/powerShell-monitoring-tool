@@ -1,0 +1,7 @@
+ComputerName,Group,Tags,Transport,Enabled,Notes
+localhost,Admin,admin;always-on,Local,true,The monitoring machine itself
+OFFICE-PC-01,Office,desktop;finance,Remote,true,Finance desk
+OFFICE-PC-02,Office,desktop,Remote,true,
+OFFICE-LT-03,Office,laptop;travel,Remote,true,Often offline when travelling
+RES-MEDIA-01,Residence,media;always-on,Remote,true,Media room PC
+RES-KIOSK-02,Residence,kiosk,Remote,false,Retired - kept for reference
